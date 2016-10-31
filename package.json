@@ -14,5 +14,6 @@
   "license": "MIT",
   "devDependencies": {
     "grunt": "^1.0.1",
+    "grunt-sass": "^1.2.1"
   }
 }

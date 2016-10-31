@@ -1,12 +1,24 @@
 module.exports = function(grunt) {
 
   // Project configuration.
-  // grunt.initConfig({
-  //
-  // });
+  grunt.initConfig({
+    sass: {
+      options: {
+          sourceMap: true,
+          style: 'expanded',
+      },
+      dev: {
+          files: [{
+              src: 'components/sass/style.scss',
+              dest: 'builds/dev/css/style.css'
+          }]
+      }
+    } //sass
 
-  // Load the plugin that provides the "uglify" task.
+  });
 
+  // Load the plugin that provides the tasks.
+  grunt.loadNpmTasks('grunt-sass');
 
   // Default task(s).
   grunt.registerTask("files", function() {
@@ -22,8 +34,10 @@ module.exports = function(grunt) {
       grunt.file.write('components/sass/style.scss');
       grunt.file.write('components/js/script.js')
 
-  })
+  }); // folder and files structure - run 'grunt files' cmd
 
-  // grunt.registerTask('default', ['']);
+
+  grunt.registerTask('default', ['sass']);
+
 
 };

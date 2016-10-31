@@ -11,5 +11,8 @@
     "grunt"
   ],
   "author": "Aaqib Parvez",
-  "license": "MIT"
+  "license": "MIT",
+  "devDependencies": {
+    "grunt": "^1.0.1"
+  }
 }

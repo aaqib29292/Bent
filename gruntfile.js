@@ -1,5 +1,20 @@
 module.exports = function(grunt) {
 
+  grunt.registerTask("files", function() {
+      // making dir
+      grunt.file.mkdir('builds/dev/css');
+      grunt.file.mkdir('builds/dev/images');
+      grunt.file.mkdir('builds/dev/js');
+      grunt.file.mkdir('components/sass');
+      grunt.file.mkdir('components/js');
+
+      // writing files
+      grunt.file.write('builds/dev/index.html');
+      grunt.file.write('components/sass/style.scss');
+      grunt.file.write('components/js/script.js');
+
+  }); // folder and files structure - run 'grunt files' cmd
+
   // Project configuration.
   grunt.initConfig({
     sass: {
@@ -17,13 +32,25 @@ module.exports = function(grunt) {
 
     watch: {
       options: {
-        spawn: false
+        spawn: false,
+        livereload: true
       },
       script: {
         files: ['builds/dev/**/*.html', 'components/sass/**/*.scss', 'components/js/**/*.js'],
         tasks: ['sass']
       }
-    } // watch
+    }, // watch
+
+    connect: {
+    server: {
+      options: {
+        hostname: 'localhost',
+        port: 3000,
+        base: 'builds/dev/',
+        livereload: true
+      }
+    }
+  }
 
   }); // initConfig
 
@@ -34,24 +61,11 @@ module.exports = function(grunt) {
   // Load the plugin that provides the tasks.
   grunt.loadNpmTasks('grunt-sass');
   grunt.loadNpmTasks('grunt-contrib-watch');
-
-  grunt.registerTask("files", function() {
-      // making dir
-      grunt.file.mkdir('builds/dev/css');
-      grunt.file.mkdir('builds/dev/images');
-      grunt.file.mkdir('builds/dev/js');
-      grunt.file.mkdir('components/sass');
-      grunt.file.mkdir('components/js');
-
-      // writing files
-      grunt.file.write('builds/dev/index.html');
-      grunt.file.write('components/sass/style.scss');
-      grunt.file.write('components/js/script.js');
-
-  }); // folder and files structure - run 'grunt files' cmd
+  grunt.loadNpmTasks('grunt-contrib-connect');
 
 
-  grunt.registerTask('default', ['sass', 'watch']);
+
+  grunt.registerTask('default', ['sass', 'connect', 'watch']);
 
 
 };

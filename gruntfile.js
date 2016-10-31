@@ -5,7 +5,7 @@ module.exports = function(grunt) {
     sass: {
       options: {
           sourceMap: true,
-          style: 'expanded',
+          style: 'expanded'
       },
       dev: {
           files: [{
@@ -13,14 +13,28 @@ module.exports = function(grunt) {
               dest: 'builds/dev/css/style.css'
           }]
       }
-    } //sass
+    }, //sass
 
-  });
+    watch: {
+      options: {
+        spawn: false
+      },
+      script: {
+        files: ['builds/dev/**/*.html', 'components/sass/**/*.scss', 'components/js/**/*.js'],
+        tasks: ['sass']
+      }
+    } // watch
+
+  }); // initConfig
+
+
+  // Default task(s).
+
 
   // Load the plugin that provides the tasks.
   grunt.loadNpmTasks('grunt-sass');
+  grunt.loadNpmTasks('grunt-contrib-watch');
 
-  // Default task(s).
   grunt.registerTask("files", function() {
       // making dir
       grunt.file.mkdir('builds/dev/css');
@@ -30,14 +44,14 @@ module.exports = function(grunt) {
       grunt.file.mkdir('components/js');
 
       // writing files
-      grunt.file.write('builds/dev/index.html')
+      grunt.file.write('builds/dev/index.html');
       grunt.file.write('components/sass/style.scss');
-      grunt.file.write('components/js/script.js')
+      grunt.file.write('components/js/script.js');
 
   }); // folder and files structure - run 'grunt files' cmd
 
 
-  grunt.registerTask('default', ['sass']);
+  grunt.registerTask('default', ['sass', 'watch']);
 
 
 };

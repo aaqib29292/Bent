@@ -1,6 +1,7 @@
 module.exports = function(grunt) {
 
   grunt.registerTask("files", function() {
+
       // making dir
       grunt.file.mkdir('builds/dev/css');
       grunt.file.mkdir('builds/dev/images');
@@ -42,15 +43,39 @@ module.exports = function(grunt) {
     }, // watch
 
     connect: {
-    server: {
-      options: {
-        hostname: 'localhost',
-        port: 3000,
-        base: 'builds/dev/',
-        livereload: true
+      server: {
+        options: {
+          hostname: 'localhost',
+          port: 3000,
+          base: 'builds/dev/',
+          livereload: true,
+          open: true
+        }
       }
-    }
-  }
+    }, //connect
+
+    wiredep: {
+      task: {
+        // you run `grunt wiredep`
+        src: 'builds/dev/**/*.html'
+      }
+    }, // wiredep
+    //
+    bower_concat: {
+      all: {
+        dest: 'builds/dev/js/_bower.js',
+        cssDest: 'builds/dev/css/_bower.css',
+        include: [
+                'jquery',
+                'bootstrap'
+        ],
+        mainFiles: {
+               'jquery': ['dist/jquery.js'],
+               'bootstrap': ['dist/js/bootstrap.js', "dist/css/bootstrap.css"]
+        },
+        options: { separator : '***********************/n' }
+      },
+    }, // bower_concat
 
   }); // initConfig
 
@@ -62,10 +87,13 @@ module.exports = function(grunt) {
   grunt.loadNpmTasks('grunt-sass');
   grunt.loadNpmTasks('grunt-contrib-watch');
   grunt.loadNpmTasks('grunt-contrib-connect');
+  grunt.loadNpmTasks('grunt-wiredep');
+  grunt.loadNpmTasks('grunt-bower-concat');
 
 
 
-  grunt.registerTask('default', ['sass', 'connect', 'watch']);
+  // grunt.registerTask('default', ['wiredep', 'sass', 'connect', 'watch']);
+  grunt.registerTask('default', ['bower_concat', 'wiredep', 'sass', 'connect', 'watch']);
 
 
 };

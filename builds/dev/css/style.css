@@ -1,4 +1,8 @@
-body {
-  background: green; }
-
-/*# sourceMappingURL=style.css.map */
+/* line 5, ../../../components/sass/style.scss */
+.angle {
+  width: 20em;
+  height: 20em;
+  background-color: #333;
+  -moz-border-radius: 1em;
+  -webkit-border-radius: 1em;
+  border-radius: 1em; }

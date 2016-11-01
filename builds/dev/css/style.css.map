@@ -4,6 +4,6 @@
 	"sources": [
 		"../../../components/sass/style.scss"
 	],
-	"mappings": "AAEA,AAAA,IAAI,CAAC;EACH,UAAU,EAAE,KAAM,GACnB",
+	"mappings": "AACA,AAAA,IAAI,CAAC;EACH,UAAU,EAAE,KAAM,GACnB",
 	"names": []
 }

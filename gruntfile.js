@@ -18,18 +18,14 @@ module.exports = function(grunt) {
 
   // Project configuration.
   grunt.initConfig({
-    sass: {
-      options: {
-          sourceMap: true,
-          style: 'expanded'
+
+    compass: {
+      dev: {                   // Target
+        options: {              // Target options
+          config: 'config.rb'
+        }
       },
-      dev: {
-          files: [{
-              src: 'components/sass/style.scss',
-              dest: 'builds/dev/css/style.css'
-          }]
-      }
-    }, //sass
+    }, // compass
 
     watch: {
       options: {
@@ -38,7 +34,11 @@ module.exports = function(grunt) {
       },
       script: {
         files: ['builds/dev/**/*.html', 'components/sass/**/*.scss', 'components/js/**/*.js'],
-        tasks: ['sass']
+        tasks: ['compass']
+      },
+      sass: {
+        files: ['components/sass/*.scss'],
+        tasks: ['compass']
       }
     }, // watch
 
@@ -47,8 +47,7 @@ module.exports = function(grunt) {
         options: {
           hostname: 'localhost',
           port: 3000,
-          base: 'builds/dev/',
-          livereload: true,
+          base: [ 'builds/dev/', './'],
           open: true
         }
       }
@@ -60,20 +59,15 @@ module.exports = function(grunt) {
         src: 'builds/dev/**/*.html'
       }
     }, // wiredep
-    //
+
     bower_concat: {
       all: {
-        dest: 'builds/dev/js/_bower.js',
-        cssDest: 'builds/dev/css/_bower.css',
-        include: [
-                'jquery',
-                'bootstrap'
-        ],
-        mainFiles: {
-               'jquery': ['dist/jquery.js'],
-               'bootstrap': ['dist/js/bootstrap.js', "dist/css/bootstrap.css"]
+        dest: {
+          'js': 'builds/dev/js/_bower.js',
+          'css': 'builds/dev/css/_bower.css',
+          // 'scss': 'components/sass/_bower.scss'
         },
-        options: { separator : '***********************/n' }
+        options: { separator : '\n***********************\n*****   New File  *****\n***********************\n' }
       },
     }, // bower_concat
 
@@ -84,7 +78,7 @@ module.exports = function(grunt) {
 
 
   // Load the plugin that provides the tasks.
-  grunt.loadNpmTasks('grunt-sass');
+  grunt.loadNpmTasks('grunt-contrib-compass');
   grunt.loadNpmTasks('grunt-contrib-watch');
   grunt.loadNpmTasks('grunt-contrib-connect');
   grunt.loadNpmTasks('grunt-wiredep');
@@ -92,8 +86,8 @@ module.exports = function(grunt) {
 
 
 
-  // grunt.registerTask('default', ['wiredep', 'sass', 'connect', 'watch']);
-  grunt.registerTask('default', ['bower_concat', 'wiredep', 'sass', 'connect', 'watch']);
+  // grunt.registerTask('default', ['wiredep', 'compass', 'connect', 'watch']);
+  grunt.registerTask('default', ['bower_concat', 'wiredep', 'compass', 'connect', 'watch']);
 
 
 };

@@ -22,7 +22,7 @@ module.exports = function(grunt) {
     compass: {
       dev: {                   // Target
         options: {              // Target options
-          config: 'config.rb'
+          config: 'config.rb',
         }
       },
     }, // compass

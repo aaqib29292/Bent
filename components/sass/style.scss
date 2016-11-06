@@ -1,10 +1,6 @@
 @import "compass";
 
-$bg : #333;
-
-.angle {
-  width: 20em;
-  height: 20em;
-  background-color: $bg;
-  @include border-radius(1em);
-}
+@import "varibles.scss";
+@import "common.scss";
+@import "resuableCode.scss";
+@import "landing.scss";

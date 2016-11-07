@@ -21,3 +21,19 @@
   border-radius: 4px;
   font-family: $primary-font;
 }
+
+
+.underline-center::after {
+  content: "";
+  display: block;
+  background: $primarycolor;
+  height: 1px;
+  max-width: 2.3em;
+  width: 100%;
+  margin: 0.8em auto;
+}
+
+.underline-left::after {
+  @extend .underline-center::after;
+  margin: 0.4em 0;
+}

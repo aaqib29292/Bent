@@ -1,0 +1,62 @@
+#about-us {
+
+  .section-details {
+    margin: 7em 0;
+
+    .section-heading {
+      text-transform: uppercase;
+      font-weight: 300;
+    }
+
+    .section-info {
+      font-size: 1.2em;
+      padding: 0 3em;
+    }
+
+  }
+
+  .image {
+    padding-left: 3em;
+  }
+
+  .tagline {
+    text-transform: uppercase;
+    font-weight: 800;
+    padding-right: 9em;
+  }
+
+  .info {
+    margin: 1.5em 0;
+    font-size: 1.2em;
+  }
+
+  .best-points {
+    margin-top: 4.5em;
+
+    .icon {
+      float: left;
+      line-height: 7em;
+      margin-right: 2em;
+      color: lighten(black, 70%);
+    }
+
+    .best-point {
+      margin: 2.5em 0;
+      .point {
+        h3 {
+          font-weight: 800;
+        }
+
+        p {
+          font-weight: 200;
+          font-size: 0.9em;
+        }
+      }
+    }
+
+
+  }
+
+
+
+}

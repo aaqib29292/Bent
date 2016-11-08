@@ -50,7 +50,7 @@ body {
 
 /* line 39, ../../../components/sass/_resuableCode.scss */
 .section-details {
-  margin: 7em 0; }
+  margin: 7em 0 5em; }
   /* line 42, ../../../components/sass/_resuableCode.scss */
   .section-details .section-heading {
     text-transform: uppercase;
@@ -274,5 +274,24 @@ body {
       -webkit-transition: all 1s;
       transition: all 1s;
       background-color: #FE6A7F; }
+
+/* line 2, ../../../components/sass/_screenshots.scss */
+#screenshots #owl-carousel {
+  margin-bottom: 5em; }
+  /* line 4, ../../../components/sass/_screenshots.scss */
+  #screenshots #owl-carousel .item {
+    margin: 0 5em 3em; }
+    /* line 6, ../../../components/sass/_screenshots.scss */
+    #screenshots #owl-carousel .item img {
+      display: block;
+      width: 100%;
+      height: auto; }
+  /* line 13, ../../../components/sass/_screenshots.scss */
+  #screenshots #owl-carousel .owl-page span {
+    background-color: transparent;
+    border: 1px solid #F39C12; }
+  /* line 17, ../../../components/sass/_screenshots.scss */
+  #screenshots #owl-carousel .owl-page.active span {
+    background-color: #F39C12; }
 
 /*# sourceMappingURL=style.css.map */

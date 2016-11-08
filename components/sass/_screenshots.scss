@@ -1,0 +1,22 @@
+#screenshots{
+  #owl-carousel {
+    margin-bottom: 5em;
+    .item {
+      margin: 0 5em 3em;
+      img {
+        display: block;
+        width: 100%;
+        height: auto;
+      }
+    }
+
+    .owl-page span {
+      background-color: transparent;
+      border: 1px solid $primarycolor;
+    }
+    .owl-page.active span {
+      background-color: $primarycolor;
+
+    }
+  }
+}

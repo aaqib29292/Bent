@@ -1,0 +1,13 @@
+#download {
+  background-color: #1A1A1A;
+  padding: 6em 0;
+  color: white;
+  button {
+    color: white;
+    background-color: $primarycolor;
+    &:hover {
+      @include transition;
+      background-color: #FE6A7F
+    }
+  }
+}

@@ -75,7 +75,7 @@ body {
 
 /* line 1, ../../../components/sass/_landing.scss */
 #landing {
-  width: 100vw;
+  width: 98.93vw;
   height: 100vh;
   color: white; }
   /* line 6, ../../../components/sass/_landing.scss */
@@ -187,26 +187,50 @@ body {
   #testimonials img {
     margin: 0 auto; }
   /* line 17, ../../../components/sass/_testimonial.scss */
+  #testimonials .img-thumbnail {
+    background-color: transparent;
+    border: 3px solid #F39C12;
+    padding: 3px; }
+  /* line 23, ../../../components/sass/_testimonial.scss */
   #testimonials .name {
     font-weight: 900;
     color: #F39C12; }
-  /* line 22, ../../../components/sass/_testimonial.scss */
+  /* line 28, ../../../components/sass/_testimonial.scss */
   #testimonials .job {
     color: #F39C12;
     font-weight: 500;
     font-size: 1.1em; }
-    /* line 26, ../../../components/sass/_testimonial.scss */
+    /* line 32, ../../../components/sass/_testimonial.scss */
     #testimonials .job em {
       font-weight: 300;
       color: white; }
-  /* line 32, ../../../components/sass/_testimonial.scss */
+  /* line 38, ../../../components/sass/_testimonial.scss */
   #testimonials .testimonal {
     margin: 3em 0; }
-  /* line 36, ../../../components/sass/_testimonial.scss */
+  /* line 42, ../../../components/sass/_testimonial.scss */
   #testimonials .carousel-indicators li {
-    border-color: #F39C12; }
-  /* line 40, ../../../components/sass/_testimonial.scss */
+    border-color: #F39C12;
+    width: 12px;
+    height: 12px; }
+  /* line 48, ../../../components/sass/_testimonial.scss */
   #testimonials .carousel-indicators .active {
     background-color: #F39C12; }
+
+/* line 1, ../../../components/sass/_download.scss */
+#download {
+  background-color: #1A1A1A;
+  padding: 6em 0;
+  color: white; }
+  /* line 5, ../../../components/sass/_download.scss */
+  #download button {
+    color: white;
+    background-color: #F39C12; }
+    /* line 8, ../../../components/sass/_download.scss */
+    #download button:hover {
+      -moz-transition: all 1s;
+      -o-transition: all 1s;
+      -webkit-transition: all 1s;
+      transition: all 1s;
+      background-color: #FE6A7F; }
 
 /*# sourceMappingURL=style.css.map */

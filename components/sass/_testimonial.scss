@@ -14,6 +14,12 @@
     margin: 0 auto;
   }
 
+  .img-thumbnail {
+    background-color: transparent;
+    border: 3px solid $primarycolor;
+    padding: 3px;
+  }
+
   .name {
     font-weight: 900;
     color: $primarycolor;
@@ -35,6 +41,8 @@
 
   .carousel-indicators li {
     border-color: $primarycolor;
+    width: 12px;
+    height: 12px;
   }
 
   .carousel-indicators .active {

@@ -1,0 +1,31 @@
+#video {
+  background-color: #E4E4E4;
+  padding: 8em 0;
+
+  .feature {
+    text-transform: uppercase;
+    font-size: 0.9em;
+    padding: 12px 2em;
+    border-radius: 4px;
+    font-family: $primary-font;
+    background-color: transparent;
+    border-color: lighten(black, 50%);
+
+    &:hover {
+      background-color: $primarycolor;
+      color: white;
+      border-color: transparent;
+      @include transition(0.5s);
+    }
+  }
+
+
+  .video iframe {
+    height: 115%;
+    padding: 5px;
+    border: 1px solid lighten(black, 50%);
+  }
+  figure {
+    margin: 0;
+  }
+}

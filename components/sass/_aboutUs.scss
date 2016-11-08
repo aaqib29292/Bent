@@ -1,4 +1,5 @@
 #about-us {
+  background-color: $bgprimary;
 
   .section-details {
     margin: 7em 0;
@@ -19,19 +20,8 @@
     padding-left: 3em;
   }
 
-  .tagline {
-    text-transform: uppercase;
-    font-weight: 800;
-    padding-right: 9em;
-  }
-
-  .info {
-    margin: 1.5em 0;
-    font-size: 1.2em;
-  }
-
   .best-points {
-    margin-top: 4.5em;
+    margin-top: 4em;
 
     .icon {
       float: left;

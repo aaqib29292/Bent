@@ -4,4 +4,7 @@ $( document ).ready(function() {
           parallax({imageSrc: '../images/home.jpg',
                     position: 'top'});
 
+
+  $('.video').fitVids();
+
 });

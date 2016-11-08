@@ -174,4 +174,39 @@ body {
   #video figure {
     margin: 0; }
 
+/* line 1, ../../../components/sass/_testimonial.scss */
+#testimonials {
+  color: white; }
+  /* line 5, ../../../components/sass/_testimonial.scss */
+  #testimonials #carousel {
+    margin: 6em 0 3em; }
+  /* line 9, ../../../components/sass/_testimonial.scss */
+  #testimonials .carousel-inner {
+    padding-bottom: 3em; }
+  /* line 13, ../../../components/sass/_testimonial.scss */
+  #testimonials img {
+    margin: 0 auto; }
+  /* line 17, ../../../components/sass/_testimonial.scss */
+  #testimonials .name {
+    font-weight: 900;
+    color: #F39C12; }
+  /* line 22, ../../../components/sass/_testimonial.scss */
+  #testimonials .job {
+    color: #F39C12;
+    font-weight: 500;
+    font-size: 1.1em; }
+    /* line 26, ../../../components/sass/_testimonial.scss */
+    #testimonials .job em {
+      font-weight: 300;
+      color: white; }
+  /* line 32, ../../../components/sass/_testimonial.scss */
+  #testimonials .testimonal {
+    margin: 3em 0; }
+  /* line 36, ../../../components/sass/_testimonial.scss */
+  #testimonials .carousel-indicators li {
+    border-color: #F39C12; }
+  /* line 40, ../../../components/sass/_testimonial.scss */
+  #testimonials .carousel-indicators .active {
+    background-color: #F39C12; }
+
 /*# sourceMappingURL=style.css.map */

@@ -31,7 +31,9 @@
     "animate.css": "^3.5.2",
     "normalize-css": "^5.0.0",
     "fitvids": "^1.2.0",
-    "parallax.js": "^1.4.2"
+    "parallax.js": "^1.4.2",
+    "counter-up": "^1.0.0",
+    "waypoints": "^4.0.1"
   },
   "overrides": {
     "bootstrap": {
@@ -51,6 +53,16 @@
         "owl-carousel/owl.carousel.js",
         "owl-carousel/owl.theme.css",
         "owl-carousel/owl.carousel.css"
+      ]
+    },
+    "waypoints": {
+      "main": [
+        "lib/jquery.waypoints.js"
+      ]
+    },
+    "counter-up": {
+      "main": [
+        "jquery.counterup.js"
       ]
     }
   }

@@ -1,5 +1,6 @@
 @import url("https://fonts.googleapis.com/css?family=Raleway:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i");
-/* line 4, ../../../components/sass/_common.scss */
+@import url("https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,600,700");
+/* line 5, ../../../components/sass/_common.scss */
 body {
   font-size: 16px;
   line-height: 1.5;
@@ -293,5 +294,23 @@ body {
   /* line 17, ../../../components/sass/_screenshots.scss */
   #screenshots #owl-carousel .owl-page.active span {
     background-color: #F39C12; }
+
+/* line 1, ../../../components/sass/_counter.scss */
+#counter {
+  padding: 8em 0; }
+  /* line 4, ../../../components/sass/_counter.scss */
+  #counter .fa {
+    color: #F39C12; }
+  /* line 8, ../../../components/sass/_counter.scss */
+  #counter h2, #counter p {
+    font-family: "Source Sans Pro", sans-serif;
+    color: #cccccc; }
+  /* line 13, ../../../components/sass/_counter.scss */
+  #counter h2 {
+    font-size: 2.5em; }
+  /* line 16, ../../../components/sass/_counter.scss */
+  #counter p {
+    font-size: 1.2em;
+    text-transform: uppercase; }
 
 /*# sourceMappingURL=style.css.map */

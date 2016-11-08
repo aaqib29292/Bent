@@ -1,0 +1,21 @@
+#counter {
+  padding: 8em 0;
+
+  .fa {
+    color: $primarycolor;
+  }
+
+  h2, p {
+    font-family: $secondary-font;
+    color: darken(white, 20%);
+  }
+
+  h2 {
+    font-size: 2.5em;
+  }
+  p {
+    font-size: 1.2em;
+    text-transform: uppercase;
+  }
+
+}

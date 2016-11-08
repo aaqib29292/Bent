@@ -8,6 +8,10 @@ $( document ).ready(function() {
           parallax({imageSrc: '../images/testimonial.jpg',
                     position: 'top'});
 
+  $('.parallax-counter').
+          parallax({imageSrc: '../images/fun_bg.jpg',
+                    position: 'top'});
+
 
   $('.video').fitVids();
 
@@ -20,5 +24,14 @@ $( document ).ready(function() {
       itemsDesktopSmall : [979,3]
 
   });
+
+  $('.counter').counterUp({
+    delay: 10,
+    time: 1000
+  });
+
+    // $("a[rel^='prettyPhoto']").prettyPhoto();
+
+
 
 });

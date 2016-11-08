@@ -1,0 +1,39 @@
+#features {
+
+  .fa {
+    color: $primarycolor;
+  }
+  .icon {
+    margin-bottom: 2em;
+    color: lighten(black, 70%);
+  }
+
+   .icon-right {
+    float: right;
+    margin-left: 2em;
+   }
+
+   .icon-left {
+    float: left;
+    margin-right: 2em;
+   }
+
+   .feature{
+      margin: 4em 0;
+     .feature-detail {
+       h3 {
+         font-weight: 800;
+         text-transform: uppercase;
+       }
+
+       p {
+         font-weight: 200;
+         font-size: 0.9em;
+       }
+     }
+
+     .fa-mobile, .fa-file-code-o {
+       margin: 0 5px 0 10px;
+     }
+   }
+}

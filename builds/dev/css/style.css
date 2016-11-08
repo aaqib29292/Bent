@@ -5,7 +5,7 @@ body {
   line-height: 1.5;
   font-family: "Raleway", sans-serif; }
 
-/* line 3, ../../../components/sass/_resuableCode.scss */
+/* line 2, ../../../components/sass/_resuableCode.scss */
 .btn-custom {
   background-color: transparent;
   font-size: 1.1em;
@@ -13,12 +13,12 @@ body {
   border-radius: 4px;
   font-family: "Raleway", sans-serif; }
 
-/* line 11, ../../../components/sass/_resuableCode.scss */
+/* line 10, ../../../components/sass/_resuableCode.scss */
 .btn-outline {
   border-color: #F39C12;
   color: #F39C12; }
 
-/* line 16, ../../../components/sass/_resuableCode.scss */
+/* line 15, ../../../components/sass/_resuableCode.scss */
 .btn-outline:hover {
   background-color: #F39C12;
   color: white;
@@ -28,27 +28,39 @@ body {
   -webkit-transition: 0.5s;
   transition: 0.5s; }
 
-/* line 23, ../../../components/sass/_resuableCode.scss */
+/* line 22, ../../../components/sass/_resuableCode.scss */
 .btn-blank {
   border-color: transparent;
   color: #F39C12; }
-  /* line 27, ../../../components/sass/_resuableCode.scss */
+  /* line 26, ../../../components/sass/_resuableCode.scss */
   .btn-blank span {
     color: white;
     margin-right: 0.6em; }
 
-/* line 32, ../../../components/sass/_resuableCode.scss */
+/* line 31, ../../../components/sass/_resuableCode.scss */
 .btn-blank:hover {
   color: inherit;
   -moz-transition: 0.5s;
   -o-transition: 0.5s;
   -webkit-transition: 0.5s;
   transition: 0.5s; }
-  /* line 34, ../../../components/sass/_resuableCode.scss */
+  /* line 33, ../../../components/sass/_resuableCode.scss */
   .btn-blank:hover span {
     color: #F39C12; }
 
-/* line 42, ../../../components/sass/_resuableCode.scss */
+/* line 39, ../../../components/sass/_resuableCode.scss */
+.section-details {
+  margin: 7em 0; }
+  /* line 42, ../../../components/sass/_resuableCode.scss */
+  .section-details .section-heading {
+    text-transform: uppercase;
+    font-weight: 300; }
+  /* line 47, ../../../components/sass/_resuableCode.scss */
+  .section-details .section-info {
+    font-size: 1.2em;
+    padding: 0 3em; }
+
+/* line 54, ../../../components/sass/_resuableCode.scss */
 .underline-center::after, .underline-left::after {
   content: "";
   display: block;
@@ -58,17 +70,17 @@ body {
   width: 100%;
   margin: 0.8em auto; }
 
-/* line 52, ../../../components/sass/_resuableCode.scss */
+/* line 64, ../../../components/sass/_resuableCode.scss */
 .underline-left::after {
   margin: 0.4em 0; }
 
-/* line 58, ../../../components/sass/_resuableCode.scss */
+/* line 70, ../../../components/sass/_resuableCode.scss */
 .tagline {
   text-transform: uppercase;
   font-weight: 800;
   padding-right: 9em; }
 
-/* line 64, ../../../components/sass/_resuableCode.scss */
+/* line 76, ../../../components/sass/_resuableCode.scss */
 .info {
   margin: 1.5em 0;
   font-size: 1.2em; }
@@ -215,6 +227,36 @@ body {
   /* line 48, ../../../components/sass/_testimonial.scss */
   #testimonials .carousel-indicators .active {
     background-color: #F39C12; }
+
+/* line 3, ../../../components/sass/_features.scss */
+#features .fa {
+  color: #F39C12; }
+/* line 6, ../../../components/sass/_features.scss */
+#features .icon {
+  margin-bottom: 2em;
+  color: #b3b3b3; }
+/* line 11, ../../../components/sass/_features.scss */
+#features .icon-right {
+  float: right;
+  margin-left: 2em; }
+/* line 16, ../../../components/sass/_features.scss */
+#features .icon-left {
+  float: left;
+  margin-right: 2em; }
+/* line 21, ../../../components/sass/_features.scss */
+#features .feature {
+  margin: 4em 0; }
+  /* line 24, ../../../components/sass/_features.scss */
+  #features .feature .feature-detail h3 {
+    font-weight: 800;
+    text-transform: uppercase; }
+  /* line 29, ../../../components/sass/_features.scss */
+  #features .feature .feature-detail p {
+    font-weight: 200;
+    font-size: 0.9em; }
+  /* line 35, ../../../components/sass/_features.scss */
+  #features .feature .fa-mobile, #features .feature .fa-file-code-o {
+    margin: 0 5px 0 10px; }
 
 /* line 1, ../../../components/sass/_download.scss */
 #download {

@@ -1,0 +1,21 @@
+#availableOn {
+  background-color: #1A1A1A;
+
+  .details {
+    padding: 4.5em 0
+  }
+
+  h2, p {
+    color: white;
+  }
+
+  .icon {
+    padding: 6em 0;
+    color: $primarycolor;
+    border-left: 1px solid #000;
+    &:last-child {
+      border-right: 1px solid #000;
+    }
+  }
+
+}

@@ -317,4 +317,22 @@ body {
 #downloadnow img {
   margin: 0 auto; }
 
+/* line 1, ../../../components/sass/_availableOn.scss */
+#availableOn {
+  background-color: #1A1A1A; }
+  /* line 4, ../../../components/sass/_availableOn.scss */
+  #availableOn .details {
+    padding: 4.5em 0; }
+  /* line 8, ../../../components/sass/_availableOn.scss */
+  #availableOn h2, #availableOn p {
+    color: white; }
+  /* line 12, ../../../components/sass/_availableOn.scss */
+  #availableOn .icon {
+    padding: 6em 0;
+    color: #F39C12;
+    border-left: 1px solid #000; }
+    /* line 16, ../../../components/sass/_availableOn.scss */
+    #availableOn .icon:last-child {
+      border-right: 1px solid #000; }
+
 /*# sourceMappingURL=style.css.map */

@@ -335,4 +335,35 @@ body {
     #availableOn .icon:last-child {
       border-right: 1px solid #000; }
 
+/* line 2, ../../../components/sass/_getInTouch.scss */
+#get-in-touch input {
+  margin: 1em 0;
+  padding: 1.7em 1em; }
+/* line 7, ../../../components/sass/_getInTouch.scss */
+#get-in-touch .form-control:focus {
+  border-color: #F39C12;
+  outline: 0;
+  -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px #f8c573;
+  box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px #f8c573; }
+/* line 14, ../../../components/sass/_getInTouch.scss */
+#get-in-touch textarea {
+  margin: 1em 0;
+  padding: 1em; }
+/* line 19, ../../../components/sass/_getInTouch.scss */
+#get-in-touch .btn-full {
+  width: 100%; }
+/* line 24, ../../../components/sass/_getInTouch.scss */
+#get-in-touch .social {
+  margin: 2em 0 4em; }
+  /* line 26, ../../../components/sass/_getInTouch.scss */
+  #get-in-touch .social i {
+    width: 2em;
+    height: 2em;
+    font-size: 1.5em;
+    color: #999999;
+    border: 1px solid #999999;
+    padding: 0.5em;
+    border-radius: 5%;
+    margin: 0.5em; }
+
 /*# sourceMappingURL=style.css.map */

@@ -86,36 +86,57 @@ body {
   margin: 1.5em 0;
   font-size: 1.2em; }
 
+/* line 1, ../../../components/sass/_navbar.scss */
+#navbar {
+  background-color: rgba(59, 59, 59, 0.70196);
+  font-size: 0.9em;
+  margin-top: -100px;
+  border-color: transparent; }
+  /* line 8, ../../../components/sass/_navbar.scss */
+  #navbar .navbar-brand {
+    padding: 0.5em; }
+    /* line 10, ../../../components/sass/_navbar.scss */
+    #navbar .navbar-brand img {
+      width: 5em;
+      height: 2em; }
+  /* line 16, ../../../components/sass/_navbar.scss */
+  #navbar a {
+    color: #cccccc; }
+    /* line 19, ../../../components/sass/_navbar.scss */
+    #navbar a:hover {
+      color: #F39C12; }
+
 /* line 1, ../../../components/sass/_landing.scss */
 #landing {
   width: 98.93vw;
   height: 100vh;
-  color: white; }
-  /* line 6, ../../../components/sass/_landing.scss */
+  color: white;
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)); }
+  /* line 7, ../../../components/sass/_landing.scss */
   #landing .logo {
     margin: 0.5rem 0 3.7em; }
-    /* line 9, ../../../components/sass/_landing.scss */
+    /* line 10, ../../../components/sass/_landing.scss */
     #landing .logo img {
       width: 8em;
       height: 3.5em; }
-  /* line 16, ../../../components/sass/_landing.scss */
+  /* line 17, ../../../components/sass/_landing.scss */
   #landing .heading {
     text-transform: uppercase;
     font-size: 3.5rem;
     font-weight: 300;
     line-height: 1.4em;
     margin: 1em 0 0.5em; }
-  /* line 24, ../../../components/sass/_landing.scss */
+  /* line 25, ../../../components/sass/_landing.scss */
   #landing .buttons {
     margin: 6em 0; }
-    /* line 26, ../../../components/sass/_landing.scss */
+    /* line 27, ../../../components/sass/_landing.scss */
     #landing .buttons .fa {
       font-size: 14px;
       transform: translateY(-25%); }
-  /* line 32, ../../../components/sass/_landing.scss */
+  /* line 33, ../../../components/sass/_landing.scss */
   #landing .iphone {
     right: 0; }
-    /* line 34, ../../../components/sass/_landing.scss */
+    /* line 35, ../../../components/sass/_landing.scss */
     #landing .iphone img {
       height: 32em; }
 
@@ -189,7 +210,8 @@ body {
 
 /* line 1, ../../../components/sass/_testimonial.scss */
 #testimonials {
-  color: white; }
+  color: white;
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)); }
   /* line 5, ../../../components/sass/_testimonial.scss */
   #testimonials #carousel {
     margin: 6em 0 3em; }
@@ -285,30 +307,30 @@ body {
     /* line 6, ../../../components/sass/_screenshots.scss */
     #screenshots #owl-carousel .item img {
       display: block;
-      width: 100%;
       height: auto; }
-  /* line 13, ../../../components/sass/_screenshots.scss */
+  /* line 12, ../../../components/sass/_screenshots.scss */
   #screenshots #owl-carousel .owl-page span {
     background-color: transparent;
     border: 1px solid #F39C12; }
-  /* line 17, ../../../components/sass/_screenshots.scss */
+  /* line 16, ../../../components/sass/_screenshots.scss */
   #screenshots #owl-carousel .owl-page.active span {
     background-color: #F39C12; }
 
 /* line 1, ../../../components/sass/_counter.scss */
 #counter {
-  padding: 8em 0; }
-  /* line 4, ../../../components/sass/_counter.scss */
+  padding: 8em 0;
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)); }
+  /* line 6, ../../../components/sass/_counter.scss */
   #counter .fa {
     color: #F39C12; }
-  /* line 8, ../../../components/sass/_counter.scss */
+  /* line 10, ../../../components/sass/_counter.scss */
   #counter h2, #counter p {
     font-family: "Source Sans Pro", sans-serif;
-    color: #cccccc; }
-  /* line 13, ../../../components/sass/_counter.scss */
+    color: #f2f2f2; }
+  /* line 15, ../../../components/sass/_counter.scss */
   #counter h2 {
     font-size: 2.5em; }
-  /* line 16, ../../../components/sass/_counter.scss */
+  /* line 18, ../../../components/sass/_counter.scss */
   #counter p {
     font-size: 1.2em;
     text-transform: uppercase; }
@@ -368,17 +390,18 @@ body {
 
 /* line 1, ../../../components/sass/_subscribe.scss */
 #subscribeUs {
-  color: white; }
-  /* line 4, ../../../components/sass/_subscribe.scss */
+  color: white;
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)); }
+  /* line 5, ../../../components/sass/_subscribe.scss */
   #subscribeUs p {
     color: #b3b3b3; }
-  /* line 9, ../../../components/sass/_subscribe.scss */
+  /* line 10, ../../../components/sass/_subscribe.scss */
   #subscribeUs .subscribe-form {
     margin-bottom: 6em; }
-    /* line 11, ../../../components/sass/_subscribe.scss */
+    /* line 12, ../../../components/sass/_subscribe.scss */
     #subscribeUs .subscribe-form .email {
       margin-bottom: 1em; }
-      /* line 13, ../../../components/sass/_subscribe.scss */
+      /* line 14, ../../../components/sass/_subscribe.scss */
       #subscribeUs .subscribe-form .email input {
         width: 50%;
         background-color: transparent;
@@ -386,14 +409,14 @@ body {
         border-width: 0px;
         border-style: inset;
         border-bottom: 1px solid #b3b3b3; }
-        /* line 21, ../../../components/sass/_subscribe.scss */
+        /* line 22, ../../../components/sass/_subscribe.scss */
         #subscribeUs .subscribe-form .email input:focus {
           border-color: #F39C12;
           border-width: 1px;
           outline: 0;
           -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px #f5b043;
           box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px #f5b043; }
-    /* line 31, ../../../components/sass/_subscribe.scss */
+    /* line 32, ../../../components/sass/_subscribe.scss */
     #subscribeUs .subscribe-form button {
       padding: 12px 4em;
       text-transform: uppercase;

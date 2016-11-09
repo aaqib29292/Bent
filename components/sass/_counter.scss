@@ -1,5 +1,7 @@
 #counter {
   padding: 8em 0;
+  background: linear-gradient(rgba(0, 0, 0, 0.5),rgba(0, 0, 0, 0.5));
+
 
   .fa {
     color: $primarycolor;
@@ -7,7 +9,7 @@
 
   h2, p {
     font-family: $secondary-font;
-    color: darken(white, 20%);
+    color: darken(white, 5%);
   }
 
   h2 {

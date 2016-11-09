@@ -399,4 +399,22 @@ body {
       text-transform: uppercase;
       font-weight: bold; }
 
+/* line 1, ../../../components/sass/_footer.scss */
+footer {
+  color: white;
+  background-color: #1A1D22;
+  padding: 4em; }
+  /* line 6, ../../../components/sass/_footer.scss */
+  footer span {
+    color: #F39C12;
+    font-weight: bold; }
+  /* line 11, ../../../components/sass/_footer.scss */
+  footer .copyright, footer .to-top {
+    display: inline-block;
+    font-weight: 600; }
+  /* line 16, ../../../components/sass/_footer.scss */
+  footer .to-top {
+    background-color: #F39C12;
+    padding: 1em 1.5em; }
+
 /*# sourceMappingURL=style.css.map */

@@ -313,4 +313,8 @@ body {
     font-size: 1.2em;
     text-transform: uppercase; }
 
+/* line 2, ../../../components/sass/_downloadNow.scss */
+#downloadnow img {
+  margin: 0 auto; }
+
 /*# sourceMappingURL=style.css.map */

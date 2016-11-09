@@ -13,6 +13,12 @@ $( document ).ready(function() {
                     position: 'top'});
 
 
+
+  $('#subscribeUs').
+          parallax({imageSrc: '../images/subscribe.jpg',
+                    position: 'top'});
+
+
   $('.video').fitVids();
 
   $("#owl-carousel").owlCarousel({

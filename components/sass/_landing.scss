@@ -5,7 +5,7 @@
   background: linear-gradient(rgba(0, 0, 0, 0.5),rgba(0, 0, 0, 0.5));
 
   .logo {
-    margin: 0.5rem 0 3.7em;
+    margin: 0.5em 0 3.7em;
 
     img {
       width: 8em;
@@ -16,10 +16,13 @@
 
   .heading {
     text-transform: uppercase;
-    font-size: 3.5rem;
+    font-size: 3.2rem;
+    // md screen
+    // font-size: 3.5rem;
     font-weight: 300;
     line-height: 1.4em;
-    margin: 1em 0 0.5em;
+    // margin: 1em 0 0.5em;
+    margin: 2em 0 0.5em;
   }
 
   .buttons {
@@ -36,5 +39,37 @@
       height: 32em;
     }
   }
+
+  /*==========  Mobile First Method  ==========*/
+
+
+
+    /* Extra Small Devices, Phones */
+    @media only screen and (max-width: 767px) {
+      .logo {
+        margin: 5em 0 3.7em;
+      }
+
+      .col-md-8 {
+        text-align: center;
+      }
+
+    }
+
+    /* Small Devices, Tablets */
+    @media only screen and (min-width : 768px) {
+
+    }
+
+    /* Medium Devices, Desktops */
+    @media only screen and (min-width : 992px) {
+
+    }
+
+    /* Large Devices, Wide Screens */
+    @media only screen and (min-width : 1200px) {
+
+    }
+
 
 }

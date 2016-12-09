@@ -1,7 +1,8 @@
 footer {
   color: white;
   background-color: #1A1D22;
-  padding: 4em;
+  // padding: 4em;
+  padding: 2em;
 
   span {
     color: $primarycolor;
@@ -11,6 +12,9 @@ footer {
   .copyright, .to-top {
     display: inline-block;
     font-weight: 600;
+  }
+  .copyright {
+    width: 60vw;
   }
 
   .to-top {

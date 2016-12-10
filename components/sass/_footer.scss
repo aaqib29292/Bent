@@ -1,9 +1,10 @@
 footer {
   color: white;
   background-color: #1A1D22;
-  // padding: 4em;
-  padding: 2em;
 
+  .container {
+    padding: 4em;
+  }
   span {
     color: $primarycolor;
     font-weight: bold;
@@ -21,4 +22,25 @@ footer {
     background-color: $primarycolor;
     padding: 1em 1.5em;
   }
+
+  /* Extra Small Devices, Phones */
+    @media only screen and (min-width : 480px) {
+
+    }
+
+    /* Small Devices, Tablets */
+    @media only screen and (min-width : 768px) {
+
+    }
+
+    /* Medium Devices, Desktops */
+    @media only screen and (min-width : 992px) {
+
+    }
+
+    /* Large Devices, Wide Screens */
+    @media only screen and (min-width : 1200px) {
+
+    }
+
 }

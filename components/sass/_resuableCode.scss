@@ -81,14 +81,8 @@
   font-size: 1.2em;
 }
 
-
-
-/*==========  Mobile First Method  ==========*/
-
-
-
-    /* Extra Small Devices, Phones */
-    @media only screen and (max-width: 767px) {
+/* Extra Small Devices, Phones */
+    @media only screen and (min-width : 480px) {
 
     }
 

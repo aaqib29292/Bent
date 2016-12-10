@@ -86,7 +86,6 @@ body {
   margin: 1.5em 0;
   font-size: 1.2em; }
 
-/*==========  Mobile First Method  ==========*/
 /* Extra Small Devices, Phones */
 /* Small Devices, Tablets */
 /* Medium Devices, Desktops */
@@ -96,7 +95,11 @@ body {
   background-color: rgba(59, 59, 59, 0.70196);
   font-size: 0.9em;
   margin-top: -100px;
-  border-color: transparent; }
+  border-color: transparent;
+  /* Extra Small Devices, Phones */
+  /* Small Devices, Tablets */
+  /* Medium Devices, Desktops */
+  /* Large Devices, Wide Screens */ }
   /* line 8, ../../../components/sass/_navbar.scss */
   #navbar .navbar-brand {
     padding: 0.5em; }
@@ -117,49 +120,60 @@ body {
   height: 100vh;
   color: white;
   background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5));
-  /*==========  Mobile First Method  ==========*/
   /* Extra Small Devices, Phones */
   /* Small Devices, Tablets */
   /* Medium Devices, Desktops */
   /* Large Devices, Wide Screens */ }
   /* line 7, ../../../components/sass/_landing.scss */
   #landing .logo {
-    margin: 0.5em 0 3.7em; }
-    /* line 10, ../../../components/sass/_landing.scss */
+    margin: 7em 0 3.7em; }
+    /* line 11, ../../../components/sass/_landing.scss */
     #landing .logo img {
       width: 8em;
       height: 3.5em; }
-  /* line 17, ../../../components/sass/_landing.scss */
+  /* line 18, ../../../components/sass/_landing.scss */
+  #landing .col-md-8 {
+    text-align: center; }
+  /* line 22, ../../../components/sass/_landing.scss */
   #landing .heading {
     text-transform: uppercase;
     font-size: 3.2rem;
     font-weight: 300;
     line-height: 1.4em;
     margin: 2em 0 0.5em; }
-  /* line 28, ../../../components/sass/_landing.scss */
+  /* line 30, ../../../components/sass/_landing.scss */
   #landing .buttons {
     margin: 6em 0; }
-    /* line 30, ../../../components/sass/_landing.scss */
+    /* line 32, ../../../components/sass/_landing.scss */
     #landing .buttons .fa {
       font-size: 14px;
       transform: translateY(-25%); }
-  /* line 36, ../../../components/sass/_landing.scss */
+  /* line 38, ../../../components/sass/_landing.scss */
   #landing .iphone {
     right: 0; }
-    /* line 38, ../../../components/sass/_landing.scss */
+    /* line 40, ../../../components/sass/_landing.scss */
     #landing .iphone img {
       height: 32em; }
-  @media only screen and (max-width: 767px) {
-    /* line 49, ../../../components/sass/_landing.scss */
+  @media only screen and (min-width: 768px) {
+    /* line 52, ../../../components/sass/_landing.scss */
     #landing .logo {
-      margin: 5em 0 3.7em; }
-    /* line 53, ../../../components/sass/_landing.scss */
-    #landing .col-md-8 {
-      text-align: center; } }
+      margin: 7em 0 5.7em; }
+      /* line 56, ../../../components/sass/_landing.scss */
+      #landing .logo img {
+        width: 8em;
+        height: 3.5em; }
+    /* line 63, ../../../components/sass/_landing.scss */
+    #landing .heading {
+      font-size: 3.5rem;
+      margin: 1em 0 0.5em; } }
 
 /* line 1, ../../../components/sass/_aboutUs.scss */
 #about-us {
-  background-color: #F1F1F1; }
+  background-color: #F1F1F1;
+  /* Extra Small Devices, Phones */
+  /* Small Devices, Tablets */
+  /* Medium Devices, Desktops */
+  /* Large Devices, Wide Screens */ }
   /* line 4, ../../../components/sass/_aboutUs.scss */
   #about-us .section-details {
     margin: 4em 0; }
@@ -171,37 +185,51 @@ body {
     #about-us .section-details .section-info {
       font-size: 1.2em;
       padding: 0 2em; }
-  /* line 21, ../../../components/sass/_aboutUs.scss */
-  #about-us .image {
-    padding-left: 3em; }
-  /* line 25, ../../../components/sass/_aboutUs.scss */
+  /* line 22, ../../../components/sass/_aboutUs.scss */
+  #about-us .image img {
+    margin: 0 auto; }
+  /* line 27, ../../../components/sass/_aboutUs.scss */
+  #about-us .description {
+    margin-top: 3em; }
+  /* line 31, ../../../components/sass/_aboutUs.scss */
   #about-us .best-points {
     margin-top: 4em; }
-    /* line 28, ../../../components/sass/_aboutUs.scss */
+    /* line 34, ../../../components/sass/_aboutUs.scss */
     #about-us .best-points .icon {
       float: left;
       line-height: 7em;
       margin-right: 2em;
       color: #b3b3b3; }
-    /* line 35, ../../../components/sass/_aboutUs.scss */
+    /* line 41, ../../../components/sass/_aboutUs.scss */
     #about-us .best-points .best-point {
       margin: 2.5em 0; }
-      /* line 38, ../../../components/sass/_aboutUs.scss */
+      /* line 44, ../../../components/sass/_aboutUs.scss */
       #about-us .best-points .best-point .point h3 {
         font-weight: 800; }
-      /* line 42, ../../../components/sass/_aboutUs.scss */
+      /* line 48, ../../../components/sass/_aboutUs.scss */
       #about-us .best-points .best-point .point p {
         font-weight: 200;
         font-size: 0.9em; }
+  @media only screen and (min-width: 768px) {
+    /* line 66, ../../../components/sass/_aboutUs.scss */
+    #about-us .section-details {
+      margin: 6em 0; }
+      /* line 70, ../../../components/sass/_aboutUs.scss */
+      #about-us .section-details .section-info {
+        padding: 0 2em; } }
 
 /* line 1, ../../../components/sass/_video.scss */
 #video {
   background-color: #E4E4E4;
-  padding: 5em 0; }
-  /* line 6, ../../../components/sass/_video.scss */
+  padding: 3em 0 5.5em;
+  /* Extra Small Devices, Phones */
+  /* Small Devices, Tablets */
+  /* Medium Devices, Desktops */
+  /* Large Devices, Wide Screens */ }
+  /* line 5, ../../../components/sass/_video.scss */
   #video .button {
     text-align: center; }
-    /* line 10, ../../../components/sass/_video.scss */
+    /* line 9, ../../../components/sass/_video.scss */
     #video .button .feature {
       text-transform: uppercase;
       font-size: 0.9em;
@@ -210,7 +238,7 @@ body {
       font-family: "Raleway", sans-serif;
       background-color: transparent;
       border-color: gray; }
-      /* line 19, ../../../components/sass/_video.scss */
+      /* line 18, ../../../components/sass/_video.scss */
       #video .button .feature:hover {
         background-color: #F39C12;
         color: white;
@@ -219,22 +247,30 @@ body {
         -o-transition: 0.5s;
         -webkit-transition: 0.5s;
         transition: 0.5s; }
-  /* line 32, ../../../components/sass/_video.scss */
+  /* line 28, ../../../components/sass/_video.scss */
   #video .video {
     margin-top: 2em; }
-    /* line 34, ../../../components/sass/_video.scss */
+    /* line 30, ../../../components/sass/_video.scss */
     #video .video iframe {
       height: 115%;
       padding: 5px;
       border: 1px solid gray; }
-    /* line 40, ../../../components/sass/_video.scss */
+    /* line 36, ../../../components/sass/_video.scss */
     #video .video figure {
       margin: 0; }
+  @media only screen and (min-width: 768px) {
+    /* line 1, ../../../components/sass/_video.scss */
+    #video {
+      padding: 4em 0 8.5em; } }
 
 /* line 1, ../../../components/sass/_testimonial.scss */
 #testimonials {
   color: white;
-  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)); }
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5));
+  /* Extra Small Devices, Phones */
+  /* Small Devices, Tablets */
+  /* Medium Devices, Desktops */
+  /* Large Devices, Wide Screens */ }
   /* line 5, ../../../components/sass/_testimonial.scss */
   #testimonials #carousel {
     margin: 6em 0 3em; }
@@ -274,38 +310,44 @@ body {
   #testimonials .carousel-indicators .active {
     background-color: #F39C12; }
 
-/* line 3, ../../../components/sass/_features.scss */
-#features .fa {
-  color: #F39C12; }
-/* line 6, ../../../components/sass/_features.scss */
-#features .icon {
-  margin-bottom: 2em;
-  color: #b3b3b3; }
-/* line 11, ../../../components/sass/_features.scss */
-#features .icon-right {
-  float: right;
-  margin-left: 2em; }
-/* line 16, ../../../components/sass/_features.scss */
-#features .icon-left {
-  float: left;
-  margin-right: 2em; }
-/* line 21, ../../../components/sass/_features.scss */
-#features .feature {
-  margin: 4em 0; }
-  /* line 24, ../../../components/sass/_features.scss */
-  #features .feature .feature-detail h3 {
-    font-weight: 800;
-    text-transform: uppercase; }
-  /* line 29, ../../../components/sass/_features.scss */
-  #features .feature .feature-detail p {
-    font-weight: 200;
-    font-size: 0.9em; }
-  /* line 35, ../../../components/sass/_features.scss */
-  #features .feature .fa-mobile, #features .feature .fa-file-code-o {
-    margin: 0 5px 0 10px; }
-/* line 40, ../../../components/sass/_features.scss */
-#features img {
-  margin: 0 auto; }
+/* line 1, ../../../components/sass/_features.scss */
+#features {
+  /* Extra Small Devices, Phones */
+  /* Small Devices, Tablets */
+  /* Medium Devices, Desktops */
+  /* Large Devices, Wide Screens */ }
+  /* line 3, ../../../components/sass/_features.scss */
+  #features .fa {
+    color: #F39C12; }
+  /* line 6, ../../../components/sass/_features.scss */
+  #features .icon {
+    margin-bottom: 2em;
+    color: #b3b3b3; }
+  /* line 11, ../../../components/sass/_features.scss */
+  #features .icon-right {
+    float: right;
+    margin-left: 2em; }
+  /* line 16, ../../../components/sass/_features.scss */
+  #features .icon-left {
+    float: left;
+    margin-right: 2em; }
+  /* line 21, ../../../components/sass/_features.scss */
+  #features .feature {
+    margin: 4em 0; }
+    /* line 24, ../../../components/sass/_features.scss */
+    #features .feature .feature-detail h3 {
+      font-weight: 800;
+      text-transform: uppercase; }
+    /* line 29, ../../../components/sass/_features.scss */
+    #features .feature .feature-detail p {
+      font-weight: 200;
+      font-size: 0.9em; }
+    /* line 35, ../../../components/sass/_features.scss */
+    #features .feature .fa-mobile, #features .feature .fa-file-code-o {
+      margin: 0 5px 0 10px; }
+  /* line 40, ../../../components/sass/_features.scss */
+  #features img {
+    margin: 0 auto; }
 
 /* line 1, ../../../components/sass/_download.scss */
 #download {
@@ -313,7 +355,11 @@ body {
   text-align: center;
   background-color: #1A1A1A;
   padding: 6em 0 3em;
-  color: white; }
+  color: white;
+  /* Extra Small Devices, Phones */
+  /* Small Devices, Tablets */
+  /* Medium Devices, Desktops */
+  /* Large Devices, Wide Screens */ }
   /* line 8, ../../../components/sass/_download.scss */
   #download button {
     margin: 3em 0;
@@ -327,28 +373,38 @@ body {
       transition: all 1s;
       background-color: #FE6A7F; }
 
-/* line 2, ../../../components/sass/_screenshots.scss */
-#screenshots #owl-carousel {
-  margin-bottom: 5em; }
-  /* line 4, ../../../components/sass/_screenshots.scss */
-  #screenshots #owl-carousel .item {
-    margin: 0 5em 3em; }
-    /* line 6, ../../../components/sass/_screenshots.scss */
-    #screenshots #owl-carousel .item img {
-      display: block;
-      height: auto; }
-  /* line 12, ../../../components/sass/_screenshots.scss */
-  #screenshots #owl-carousel .owl-page span {
-    background-color: transparent;
-    border: 1px solid #F39C12; }
-  /* line 16, ../../../components/sass/_screenshots.scss */
-  #screenshots #owl-carousel .owl-page.active span {
-    background-color: #F39C12; }
+/* line 1, ../../../components/sass/_screenshots.scss */
+#screenshots {
+  /* Extra Small Devices, Phones */
+  /* Small Devices, Tablets */
+  /* Medium Devices, Desktops */
+  /* Large Devices, Wide Screens */ }
+  /* line 2, ../../../components/sass/_screenshots.scss */
+  #screenshots #owl-carousel {
+    margin-bottom: 5em; }
+    /* line 4, ../../../components/sass/_screenshots.scss */
+    #screenshots #owl-carousel .item {
+      margin: 0 5em 3em; }
+      /* line 6, ../../../components/sass/_screenshots.scss */
+      #screenshots #owl-carousel .item img {
+        display: block;
+        height: auto; }
+    /* line 12, ../../../components/sass/_screenshots.scss */
+    #screenshots #owl-carousel .owl-page span {
+      background-color: transparent;
+      border: 1px solid #F39C12; }
+    /* line 16, ../../../components/sass/_screenshots.scss */
+    #screenshots #owl-carousel .owl-page.active span {
+      background-color: #F39C12; }
 
 /* line 1, ../../../components/sass/_counter.scss */
 #counter {
   padding: 4em 0;
-  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)); }
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5));
+  /* Extra Small Devices, Phones */
+  /* Small Devices, Tablets */
+  /* Medium Devices, Desktops */
+  /* Large Devices, Wide Screens */ }
   /* line 6, ../../../components/sass/_counter.scss */
   #counter .count-info {
     margin: 2.5em 0; }
@@ -363,18 +419,35 @@ body {
     #counter .count-info h2 {
       font-size: 1.5em;
       font-weight: bold; }
-    /* line 23, ../../../components/sass/_counter.scss */
+    /* line 22, ../../../components/sass/_counter.scss */
     #counter .count-info p {
       font-size: 0.8em;
       text-transform: uppercase; }
+  @media only screen and (min-width: 768px) {
+    /* line 38, ../../../components/sass/_counter.scss */
+    #counter .count-info h2 {
+      font-size: 2.5em; }
+    /* line 42, ../../../components/sass/_counter.scss */
+    #counter .count-info p {
+      font-size: 1.2em; } }
 
-/* line 2, ../../../components/sass/_downloadNow.scss */
-#downloadnow img {
-  margin: 0 auto; }
+/* line 1, ../../../components/sass/_downloadNow.scss */
+#downloadnow {
+  /* Extra Small Devices, Phones */
+  /* Small Devices, Tablets */
+  /* Medium Devices, Desktops */
+  /* Large Devices, Wide Screens */ }
+  /* line 2, ../../../components/sass/_downloadNow.scss */
+  #downloadnow img {
+    margin: 0 auto; }
 
 /* line 1, ../../../components/sass/_availableOn.scss */
 #availableOn {
-  background-color: #1A1A1A; }
+  background-color: #1A1A1A;
+  /* Extra Small Devices, Phones */
+  /* Small Devices, Tablets */
+  /* Medium Devices, Desktops */
+  /* Large Devices, Wide Screens */ }
   /* line 4, ../../../components/sass/_availableOn.scss */
   #availableOn .details {
     padding: 1.5em 0; }
@@ -389,42 +462,56 @@ body {
     /* line 18, ../../../components/sass/_availableOn.scss */
     #availableOn .icon:last-child {
       border-right: 1px solid #000; }
+  @media only screen and (min-width: 768px) {
+    /* line 31, ../../../components/sass/_availableOn.scss */
+    #availableOn .details {
+      padding: 4.5em 0; } }
 
-/* line 2, ../../../components/sass/_getInTouch.scss */
-#get-in-touch input {
-  margin: 1em 0;
-  padding: 1.7em 1em; }
-/* line 7, ../../../components/sass/_getInTouch.scss */
-#get-in-touch .form-control:focus {
-  border-color: #F39C12;
-  outline: 0;
-  -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px #f8c573;
-  box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px #f8c573; }
-/* line 14, ../../../components/sass/_getInTouch.scss */
-#get-in-touch textarea {
-  margin: 1em 0;
-  padding: 1em; }
-/* line 19, ../../../components/sass/_getInTouch.scss */
-#get-in-touch .btn-full {
-  width: 100%; }
-/* line 24, ../../../components/sass/_getInTouch.scss */
-#get-in-touch .social {
-  margin: 2em 0 4em; }
-  /* line 26, ../../../components/sass/_getInTouch.scss */
-  #get-in-touch .social i {
-    width: 2em;
-    height: 2em;
-    font-size: 1.5em;
-    color: #999999;
-    border: 1px solid #999999;
-    padding: 0.5em;
-    border-radius: 5%;
-    margin: 0.5em; }
+/* line 1, ../../../components/sass/_getInTouch.scss */
+#get-in-touch {
+  /* Extra Small Devices, Phones */
+  /* Small Devices, Tablets */
+  /* Medium Devices, Desktops */
+  /* Large Devices, Wide Screens */ }
+  /* line 2, ../../../components/sass/_getInTouch.scss */
+  #get-in-touch input {
+    margin: 1em 0;
+    padding: 1.7em 1em; }
+  /* line 7, ../../../components/sass/_getInTouch.scss */
+  #get-in-touch .form-control:focus {
+    border-color: #F39C12;
+    outline: 0;
+    -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px #f8c573;
+    box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px #f8c573; }
+  /* line 14, ../../../components/sass/_getInTouch.scss */
+  #get-in-touch textarea {
+    margin: 1em 0;
+    padding: 1em; }
+  /* line 19, ../../../components/sass/_getInTouch.scss */
+  #get-in-touch .btn-full {
+    width: 100%; }
+  /* line 24, ../../../components/sass/_getInTouch.scss */
+  #get-in-touch .social {
+    margin: 2em 0 4em; }
+    /* line 26, ../../../components/sass/_getInTouch.scss */
+    #get-in-touch .social i {
+      width: 2em;
+      height: 2em;
+      font-size: 1.5em;
+      color: #999999;
+      border: 1px solid #999999;
+      padding: 0.5em;
+      border-radius: 5%;
+      margin: 0.5em; }
 
 /* line 1, ../../../components/sass/_subscribe.scss */
 #subscribeUs {
   color: white;
-  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)); }
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5));
+  /* Extra Small Devices, Phones */
+  /* Small Devices, Tablets */
+  /* Medium Devices, Desktops */
+  /* Large Devices, Wide Screens */ }
   /* line 5, ../../../components/sass/_subscribe.scss */
   #subscribeUs p {
     color: #b3b3b3; }
@@ -459,19 +546,25 @@ body {
 footer {
   color: white;
   background-color: #1A1D22;
-  padding: 2em; }
-  /* line 7, ../../../components/sass/_footer.scss */
+  /* Extra Small Devices, Phones */
+  /* Small Devices, Tablets */
+  /* Medium Devices, Desktops */
+  /* Large Devices, Wide Screens */ }
+  /* line 5, ../../../components/sass/_footer.scss */
+  footer .container {
+    padding: 4em; }
+  /* line 8, ../../../components/sass/_footer.scss */
   footer span {
     color: #F39C12;
     font-weight: bold; }
-  /* line 12, ../../../components/sass/_footer.scss */
+  /* line 13, ../../../components/sass/_footer.scss */
   footer .copyright, footer .to-top {
     display: inline-block;
     font-weight: 600; }
-  /* line 16, ../../../components/sass/_footer.scss */
+  /* line 17, ../../../components/sass/_footer.scss */
   footer .copyright {
     width: 60vw; }
-  /* line 20, ../../../components/sass/_footer.scss */
+  /* line 21, ../../../components/sass/_footer.scss */
   footer .to-top {
     background-color: #F39C12;
     padding: 1em 1.5em; }

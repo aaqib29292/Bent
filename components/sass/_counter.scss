@@ -16,7 +16,6 @@
     }
 
     h2 {
-      // font-size: 2.5em;
       font-size: 1.5em;
       font-weight: bold;
     }
@@ -26,5 +25,35 @@
       text-transform: uppercase;
     }
   }
+
+  /* Extra Small Devices, Phones */
+    @media only screen and (min-width : 480px) {
+
+    }
+
+    /* Small Devices, Tablets */
+    @media only screen and (min-width : 768px) {
+
+      .count-info {
+        h2 {
+          font-size: 2.5em;
+        }
+
+        p {
+          font-size: 1.2em;
+        }
+      }
+
+    }
+
+    /* Medium Devices, Desktops */
+    @media only screen and (min-width : 992px) {
+
+    }
+
+    /* Large Devices, Wide Screens */
+    @media only screen and (min-width : 1200px) {
+
+    }
 
 }

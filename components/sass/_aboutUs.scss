@@ -19,7 +19,13 @@
   }
 
   .image {
-    padding-left: 3em;
+    img {
+      margin: 0 auto;
+    }
+  }
+
+  .description {
+    margin-top: 3em;
   }
 
   .best-points {
@@ -49,6 +55,33 @@
 
   }
 
+  /* Extra Small Devices, Phones */
+    @media only screen and (min-width : 480px) {
 
+    }
 
+    /* Small Devices, Tablets */
+    @media only screen and (min-width : 768px) {
+
+      .section-details {
+        // margin: 7em 0;
+        margin: 6em 0;
+
+        .section-info {
+          padding: 0 2em;
+        }
+
+      }
+
+    }
+
+    /* Medium Devices, Desktops */
+    @media only screen and (min-width : 992px) {
+
+    }
+
+    /* Large Devices, Wide Screens */
+    @media only screen and (min-width : 1200px) {
+
+    }
 }

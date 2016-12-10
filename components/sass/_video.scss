@@ -1,7 +1,6 @@
 #video {
   background-color: #E4E4E4;
-  // padding: 8em 0;
-  padding: 5em 0;
+  padding: 3em 0 5.5em;
 
   .button {
 
@@ -26,9 +25,6 @@
 
   }
 
-
-
-
   .video {
     margin-top: 2em;
     iframe {
@@ -41,4 +37,26 @@
       margin: 0;
     }
   }
+
+
+  /* Extra Small Devices, Phones */
+    @media only screen and (min-width : 480px) {
+
+    }
+
+    /* Small Devices, Tablets */
+    @media only screen and (min-width : 768px) {
+      padding: 4em 0 8.5em;
+    }
+
+    /* Medium Devices, Desktops */
+    @media only screen and (min-width : 992px) {
+
+    }
+
+    /* Large Devices, Wide Screens */
+    @media only screen and (min-width : 1200px) {
+
+    }
+
 }

@@ -4,7 +4,23 @@
 body {
   font-size: 16px;
   line-height: 1.5;
-  font-family: "Raleway", sans-serif; }
+  font-family: "Raleway", sans-serif;
+  /* Extra Small Devices, Phones */
+  /* Small Devices, Tablets */
+  /* Medium Devices, Desktops */
+  /* Large Devices, Wide Screens */ }
+  @media only screen and (min-width: 480px) {
+    /* line 5, ../../../components/sass/_common.scss */
+    body {
+      font-size: 14px; } }
+  @media only screen and (min-width: 768px) {
+    /* line 5, ../../../components/sass/_common.scss */
+    body {
+      font-size: 16px; } }
+  @media only screen and (min-width: 1200px) {
+    /* line 5, ../../../components/sass/_common.scss */
+    body {
+      font-size: 18px; } }
 
 /* line 2, ../../../components/sass/_resuableCode.scss */
 .btn-custom {
@@ -596,7 +612,7 @@ footer {
     font-weight: 600; }
   /* line 17, ../../../components/sass/_footer.scss */
   footer .copyright {
-    width: 60vw; }
+    width: 50vw; }
   /* line 21, ../../../components/sass/_footer.scss */
   footer .to-top {
     background-color: #F39C12;

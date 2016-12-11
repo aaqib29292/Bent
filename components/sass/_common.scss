@@ -6,4 +6,24 @@ body {
   font-size: 16px;
   line-height: 1.5;
   font-family: $primary-font;
+
+  /* Extra Small Devices, Phones */
+    @media only screen and (min-width : 480px) {
+      font-size: 14px;
+    }
+
+    /* Small Devices, Tablets */
+    @media only screen and (min-width : 768px) {
+      font-size: 16px;
+    }
+
+    /* Medium Devices, Desktops */
+    @media only screen and (min-width : 992px) {
+
+    }
+
+    /* Large Devices, Wide Screens */
+    @media only screen and (min-width : 1200px) {
+      font-size: 18px;
+    }
 }

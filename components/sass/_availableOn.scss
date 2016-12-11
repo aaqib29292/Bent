@@ -2,7 +2,6 @@
   background-color: #1A1A1A;
 
   .details {
-    // padding: 4.5em 0;
     padding: 1.5em 0;
   }
 
@@ -11,7 +10,6 @@
   }
 
   .icon {
-    // padding: 6em 0;
     padding: 3em 0;
     color: $primarycolor;
     border-left: 1px solid #000;
@@ -30,6 +28,10 @@
 
       .details {
         padding: 4.5em 0;
+      }
+
+      .icon {
+        padding: 7em 0;
       }
 
     }

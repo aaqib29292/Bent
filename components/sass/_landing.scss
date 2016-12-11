@@ -11,11 +11,12 @@
     img {
       width: 8em;
       height: 3.5em;
+      margin: 0 auto;
     }
 
   }
 
-  .col-md-8 {
+  .col-sm-8 {
     text-align: center;
   }
 
@@ -50,7 +51,6 @@
     /* Small Devices, Tablets */
     @media only screen and (min-width : 768px) {
       .logo {
-        // margin: 0.5em 0 3.7em;
         margin: 7em 0 5.7em;
 
         img {
@@ -58,6 +58,9 @@
           height: 3.5em;
         }
 
+      }
+      .col-sm-8 {
+        text-align: left;
       }
 
       .heading {

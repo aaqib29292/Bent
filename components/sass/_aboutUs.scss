@@ -78,6 +78,14 @@
     /* Medium Devices, Desktops */
     @media only screen and (min-width : 992px) {
 
+      .image {
+        padding: 4em 2em;
+      }
+
+      .description {
+        margin-top: 0em;
+      }
+
     }
 
     /* Large Devices, Wide Screens */

@@ -36,8 +36,41 @@ $( document ).ready(function() {
     time: 1000
   });
 
-    // $("a[rel^='prettyPhoto']").prettyPhoto();
+  // $("a[rel^='prettyPhoto']").prettyPhoto();
 
+
+  var showNavbar = function () {
+    $( "nav" ).addClass( "navbar-visible");
+    $( "nav" ).removeClass( "navbar-invisible");
+  };
+
+  var hideNavbar = function () {
+    $( "nav" ).removeClass( "navbar-visible");
+    $( "nav" ).addClass( "navbar-invisible");
+  };
+
+  // Navbar displaying on sc
+
+  // checking scrollPos on reloading and displaying
+  var scrollPos = $(window).scrollTop();
+  console.log(scrollPos);
+  if(scrollPos >= 200) {
+    showNavbar();
+  } else {
+    hideNavbar();
+  }
+
+  // Depending on scroll, displaying navbar
+
+  $(window).scroll(function() {
+      var scroll = $(window).scrollTop();
+
+      if(scroll >= 200) {
+          showNavbar();
+      } else {
+          hideNavbar();
+      }
+  });
 
 
 });

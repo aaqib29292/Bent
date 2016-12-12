@@ -5,6 +5,7 @@ body {
   font-size: 16px;
   line-height: 1.5;
   font-family: "Raleway", sans-serif;
+  position: relative;
   /* Extra Small Devices, Phones */
   /* Small Devices, Tablets */
   /* Medium Devices, Desktops */
@@ -110,7 +111,6 @@ body {
 #navbar {
   background-color: rgba(59, 59, 59, 0.70196);
   font-size: 0.9em;
-  margin-top: -100px;
   border-color: transparent;
   /* Extra Small Devices, Phones */
   /* Small Devices, Tablets */
@@ -129,6 +129,21 @@ body {
     /* line 19, ../../../components/sass/_navbar.scss */
     #navbar a:hover {
       color: #F39C12; }
+  /* line 25, ../../../components/sass/_navbar.scss */
+  #navbar .active a {
+    color: #F39C12;
+    background-color: transparent; }
+
+/* line 53, ../../../components/sass/_navbar.scss */
+.navbar-invisible {
+  margin-top: -100px;
+  opacity: 0; }
+
+/* line 57, ../../../components/sass/_navbar.scss */
+.navbar-visible {
+  margin-top: 0;
+  opacity: 1;
+  transition: all 0.5s  ease-in; }
 
 /* line 1, ../../../components/sass/_landing.scss */
 #landing {
@@ -142,7 +157,7 @@ body {
   /* Large Devices, Wide Screens */ }
   /* line 7, ../../../components/sass/_landing.scss */
   #landing .logo {
-    margin: 7em 0 3.7em; }
+    margin: 5vh 0 7vh; }
     /* line 11, ../../../components/sass/_landing.scss */
     #landing .logo img {
       width: 8em;
@@ -156,36 +171,33 @@ body {
     text-transform: uppercase;
     font-size: 3.2rem;
     font-weight: 300;
-    line-height: 1.4em;
-    margin: 2em 0 0.5em; }
+    line-height: 7vh;
+    margin: 10vh 0 2vh; }
   /* line 31, ../../../components/sass/_landing.scss */
   #landing .buttons {
-    margin: 6em 0; }
+    margin: 10vh 0; }
     /* line 33, ../../../components/sass/_landing.scss */
     #landing .buttons .fa {
       font-size: 14px;
       transform: translateY(-25%); }
   /* line 39, ../../../components/sass/_landing.scss */
   #landing .iphone {
-    right: 0; }
-    /* line 41, ../../../components/sass/_landing.scss */
-    #landing .iphone img {
-      height: 32em; }
+    padding-left: 1em; }
   @media only screen and (min-width: 768px) {
+    /* line 50, ../../../components/sass/_landing.scss */
+    #landing .row {
+      margin-top: 12vh; }
     /* line 53, ../../../components/sass/_landing.scss */
-    #landing .logo {
-      margin: 7em 0 5.7em; }
-      /* line 56, ../../../components/sass/_landing.scss */
-      #landing .logo img {
-        width: 8em;
-        height: 3.5em; }
-    /* line 62, ../../../components/sass/_landing.scss */
     #landing .col-sm-8 {
       text-align: left; }
-    /* line 66, ../../../components/sass/_landing.scss */
+    /* line 57, ../../../components/sass/_landing.scss */
     #landing .heading {
       font-size: 3.5rem;
       margin: 1em 0 0.5em; } }
+  @media only screen and (min-width: 992px) {
+    /* line 66, ../../../components/sass/_landing.scss */
+    #landing .col-sm-8 {
+      margin: 15vh 0 10vh; } }
 
 /* line 1, ../../../components/sass/_aboutUs.scss */
 #about-us {

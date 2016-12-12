@@ -2,7 +2,7 @@
   background-color: rgba(59, 59, 59, 0.701961);
   font-size: 0.9em;
   // opacity: 0;
-  margin-top: -100px;
+
   border-color: transparent;
 
   .navbar-brand {
@@ -20,6 +20,14 @@
       color: $primarycolor;
     }
   }
+
+  .active {
+    a {
+      color: $primarycolor;
+      background-color: transparent;
+    }
+  }
+
 
   /* Extra Small Devices, Phones */
     @media only screen and (min-width : 480px) {
@@ -41,4 +49,13 @@
 
     }
 
+}
+.navbar-invisible {
+  margin-top: -100px;
+  opacity: 0;
+}
+.navbar-visible {
+  margin-top: 0;
+  opacity: 1;
+  transition: all 0.5s  ease-in;
 }

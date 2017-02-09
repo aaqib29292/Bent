@@ -36,6 +36,11 @@ $( document ).ready(function() {
     time: 1000
   });
 
+
+  new WOW().init();
+
+
+
   // $("a[rel^='prettyPhoto']").prettyPhoto();
 
 
@@ -71,6 +76,32 @@ $( document ).ready(function() {
           hideNavbar();
       }
   });
+
+
+  //Use smooth scrolling when clicking on navigation from CSS-Tricks
+
+  var topoffset = 50;
+  // scrollspy
+  $('body').scrollspy({
+     target: '.navbar-fixed-top',
+     offset: topoffset
+    })
+
+
+  $('.navbar-nav a[href*="#"]:not(a[href="#"])').click(function() {
+    if (location.pathname.replace(/^\//,'') ===
+    this.pathname.replace(/^\//,'') &&
+    location.hostname === this.hostname) {
+      var target = $(this.hash);
+      target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
+      if (target.length) {
+        $('html,body').animate({
+          scrollTop: target.offset().top-topoffset+2
+        }, 800);
+        return false;
+      } //target.length
+    } //click function
+  }); //smooth scrolling
 
 
 });

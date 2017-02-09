@@ -5,7 +5,6 @@
   background: linear-gradient(rgba(0, 0, 0, 0.5),rgba(0, 0, 0, 0.5));
 
   .logo {
-    // margin: 7em 0 3.7em;
     margin: 5vh 0 7vh;
 
     img {
@@ -48,7 +47,7 @@
     /* Small Devices, Tablets */
     @media only screen and (min-width : 768px) {
       .row {
-        margin-top: 12vh;
+        margin-top: 7vh;
       }
       .col-sm-8 {
         text-align: left;

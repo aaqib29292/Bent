@@ -158,44 +158,44 @@ body {
   /* line 7, ../../../components/sass/_landing.scss */
   #landing .logo {
     margin: 5vh 0 7vh; }
-    /* line 11, ../../../components/sass/_landing.scss */
+    /* line 10, ../../../components/sass/_landing.scss */
     #landing .logo img {
       width: 8em;
       height: 3.5em;
       margin: 0 auto; }
-  /* line 19, ../../../components/sass/_landing.scss */
+  /* line 18, ../../../components/sass/_landing.scss */
   #landing .col-sm-8 {
     text-align: center; }
-  /* line 23, ../../../components/sass/_landing.scss */
+  /* line 22, ../../../components/sass/_landing.scss */
   #landing .heading {
     text-transform: uppercase;
     font-size: 3.2rem;
     font-weight: 300;
     line-height: 7vh;
     margin: 10vh 0 2vh; }
-  /* line 31, ../../../components/sass/_landing.scss */
+  /* line 30, ../../../components/sass/_landing.scss */
   #landing .buttons {
     margin: 10vh 0; }
-    /* line 33, ../../../components/sass/_landing.scss */
+    /* line 32, ../../../components/sass/_landing.scss */
     #landing .buttons .fa {
       font-size: 14px;
       transform: translateY(-25%); }
-  /* line 39, ../../../components/sass/_landing.scss */
+  /* line 38, ../../../components/sass/_landing.scss */
   #landing .iphone {
     padding-left: 1em; }
   @media only screen and (min-width: 768px) {
-    /* line 50, ../../../components/sass/_landing.scss */
+    /* line 49, ../../../components/sass/_landing.scss */
     #landing .row {
-      margin-top: 12vh; }
-    /* line 53, ../../../components/sass/_landing.scss */
+      margin-top: 7vh; }
+    /* line 52, ../../../components/sass/_landing.scss */
     #landing .col-sm-8 {
       text-align: left; }
-    /* line 57, ../../../components/sass/_landing.scss */
+    /* line 56, ../../../components/sass/_landing.scss */
     #landing .heading {
       font-size: 3.5rem;
       margin: 1em 0 0.5em; } }
   @media only screen and (min-width: 992px) {
-    /* line 66, ../../../components/sass/_landing.scss */
+    /* line 65, ../../../components/sass/_landing.scss */
     #landing .col-sm-8 {
       margin: 15vh 0 10vh; } }
 
@@ -523,7 +523,7 @@ body {
   @media only screen and (min-width: 768px) {
     /* line 29, ../../../components/sass/_availableOn.scss */
     #availableOn .details {
-      padding: 4.5em 0; }
+      padding: 4.5em 3em 4.5em 0; }
     /* line 33, ../../../components/sass/_availableOn.scss */
     #availableOn .icon {
       padding: 7em 0; } }
@@ -564,6 +564,12 @@ body {
       padding: 0.5em;
       border-radius: 5%;
       margin: 0.5em; }
+      /* line 36, ../../../components/sass/_getInTouch.scss */
+      #get-in-touch .social i:hover {
+        color: white;
+        background-color: #F39C12;
+        border: 1px solid #F39C12;
+        transition: all 0.5s ease-in; }
 
 /* line 1, ../../../components/sass/_subscribe.scss */
 #subscribeUs {

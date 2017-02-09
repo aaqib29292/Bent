@@ -32,6 +32,13 @@
       padding: 0.5em;
       border-radius: 5%;
       margin: 0.5em;
+
+      &:hover {
+        color: white;
+        background-color: $primarycolor;
+        border: 1px solid $primarycolor;
+        transition: all 0.5s ease-in;
+      }
     }
   }
 

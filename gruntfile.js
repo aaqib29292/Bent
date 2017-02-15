@@ -10,7 +10,7 @@ module.exports = function(grunt) {
       grunt.file.mkdir('components/js');
 
       // writing files
-      grunt.file.write('builds/dev/index.html');
+      grunt.file.write('/index.html');
       grunt.file.write('components/sass/style.scss');
       grunt.file.write('components/js/script.js');
 
@@ -47,7 +47,7 @@ module.exports = function(grunt) {
         options: {
           hostname: 'localhost',
           port: 3000,
-          base: [ 'builds/dev/', './'],
+          base: [".", 'builds/dev/'],
           open: true
         }
       }
@@ -64,12 +64,19 @@ module.exports = function(grunt) {
       all: {
         dest: {
           'js': 'builds/dev/js/_bower.js',
-          'css': 'builds/dev/css/_bower.css',
-          // 'scss': 'components/sass/_bower.scss'
+          'css': 'builds/dev/css/_bower.css'
         },
-        options: { separator : '\n***********************\n*****   New File  *****\n***********************\n' }
-      },
-    }, // bower_concat
+        options: { separator : '\n\n/************************\n*****   New File  *****\n***********************/\n\n' },
+        mainFiles: {
+          "jquery": ["dist/jquery.js"],
+          "bootstrap": ["less/bootstrap.less", "dist/js/bootstrap.js", "dist/css/bootstrap.css", "dist/fonts/glyphicons-halflings-regular.woff"],
+          "font-awesome":[ "css/font-awesome.css"],
+          "owlcarousel": [ "owl-carousel/owl.carousel.js", "owl-carousel/owl.theme.css", "owl-carousel/owl.carousel.css"],
+          "waypoints":[ "lib/jquery.waypoints.js"],
+          "counter-up": [ "jquery.counterup.js" ]
+        }
+      }
+    } // bower_concat
 
   }); // initConfig
 
@@ -86,8 +93,9 @@ module.exports = function(grunt) {
 
 
 
+  // grunt.registerTask('default', ['bower_concat', 'wiredep', 'compass', 'connect', 'watch']);
   // grunt.registerTask('default', ['wiredep', 'compass', 'connect', 'watch']);
-  grunt.registerTask('default', ['bower_concat', 'wiredep', 'compass', 'connect', 'watch']);
+  grunt.registerTask('default', ['bower_concat', 'compass', 'connect', 'watch']);
 
 
 };

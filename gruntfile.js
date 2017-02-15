@@ -63,8 +63,8 @@ module.exports = function(grunt) {
     bower_concat: {
       all: {
         dest: {
-          'js': 'builds/dev/js/_bower.js',
-          'css': 'builds/dev/css/_bower.css'
+          'js': 'builds/dev/js/bower.js',
+          'css': 'builds/dev/css/bower.css'
         },
         options: { separator : '\n\n/************************\n*****   New File  *****\n***********************/\n\n' },
         mainFiles: {

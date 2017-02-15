@@ -1,21 +1,21 @@
 $( document ).ready(function() {
 
   $('.parallax-landing').
-          parallax({imageSrc: '/../images/home.jpg',
+          parallax({imageSrc: 'builds/dev/images/home.jpg',
                     position: 'top'});
 
   $('.parallax-testimonials').
-          parallax({imageSrc: '/../images/testimonial.jpg',
+          parallax({imageSrc: 'builds/dev/images/testimonial.jpg',
                     position: 'top'});
 
   $('.parallax-counter').
-          parallax({imageSrc: '/../images/fun_bg.jpg',
+          parallax({imageSrc: 'builds/dev/images/fun_bg.jpg',
                     position: 'top'});
 
 
 
   $('#subscribeUs').
-          parallax({imageSrc: '/../images/subscribe.jpg',
+          parallax({imageSrc: 'builds/dev/images/subscribe.jpg',
                     position: 'top'});
 
 
